@@ -78,6 +78,8 @@ function showFishmanDialog(){
 			function(){
 				//go to fishing game
 				game.state.start('fish');
+				playerX = 1752;
+				playerY = 180;
 		}, this);
 		noButton.events.onInputDown.add(
 			function(){
