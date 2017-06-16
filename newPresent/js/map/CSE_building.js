@@ -51,9 +51,9 @@ function nearBeiNing(){
 		dialog.frame = 0;
 		goButton.events.onInputDown.add(
 			function(){
-				game.state.start('Bei_ning');
 				playerX = 10;
 				playerY = 3950;
+				game.state.start('Bei_ning');
 		}, this);
 		noButton.events.onInputDown.add(
 			function(){
@@ -79,9 +79,9 @@ function showFishmanDialog(){
 		goButton.events.onInputDown.add(
 			function(){
 				//go to fishing game
+				playerX = player.x;
+				playerY = player.y;
 				game.state.start('fish');
-				playerX = 1752;
-				playerY = 180;
 		}, this);
 		noButton.events.onInputDown.add(
 			function(){
