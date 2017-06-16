@@ -7,8 +7,8 @@ var timeText;
 var dialog;
 var message;
 var player;
-var playerX;
-var playerY;
+var playerX = 0;
+var playerY = 0;
 
 function loadBasicElements(){
 	game.load.spritesheet('player', 'image/man.png', 30, 55);
@@ -29,7 +29,7 @@ function loadBasicElements(){
 	game.load.audio('buttonSound', 'audio/button.mp3');
 }
 
-function createBasicElements(x, y){
+function createBasicElements(){
 	buttonSound = game.add.audio('buttonSound');
 	buttonSound.volume = 0.7;
 	
@@ -81,7 +81,7 @@ function createBasicElements(x, y){
 	minigameSelectText = game.add.text(60, 445, "躲車子\n打磚塊\n游泳", {font: "8px 微軟正黑體", fill: "#000000"});
 	minigameSelectText.fixedToCamera = true;
 	
-	player = game.add.sprite(x, y, 'player');
+	player = game.add.sprite(playerX, playerY, 'player');
 	player.anchor.set(0.5);
 	player.animations.add('left', [0, 1, 2, 3], 6, true);
 	player.animations.add('right', [5, 6, 7, 8], 6, true);
