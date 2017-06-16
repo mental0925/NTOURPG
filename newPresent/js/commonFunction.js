@@ -44,8 +44,12 @@ function createBasicElements(){
 	}, this, 1, 0, 1);
 	flash.fixedToCamera = true;
 	flashSelect0 = game.add.button(45, 450, 'flashSelect', function(){
+		playerX = 2130;
+		playerY = 245;
 		game.state.start('CSE_building'); }, this, 1, 0, 0);
 	flashSelect1 = game.add.button(45, 470, 'flashSelect', function(){
+		playerX = 200;
+		playerY = 400;
 		game.state.start('Bei_ning'); }, this, 1, 0, 0);
 	flashSelect2 = game.add.button(45, 490, 'flashSelect', function(){
 		game.state.start('Zhong_zheng'); }, this, 1, 0, 0);
@@ -68,10 +72,16 @@ function createBasicElements(){
 	}, this, 1, 0, 0);
 	minigame.fixedToCamera = true;
 	minigameSelect0 = game.add.button(45, 450, 'flashSelect', function(){
+		playerX = player.x;
+		playerY = player.y;
 		game.state.start('car'); }, this, 1, 0, 0);
 	minigameSelect1 = game.add.button(45, 470, 'flashSelect', function(){
+		playerX = player.x;
+		playerY = player.y;
 		game.state.start('hitbrick'); }, this, 1, 0, 0);
 	minigameSelect2 = game.add.button(45, 490, 'flashSelect', function(){
+		playerX = player.x;
+		playerY = player.y;
 		game.state.start('swim'); }, this, 1, 0, 0);
 	minigameSelect = game.add.group();
 	minigameSelect.addChild(minigameSelect0);
