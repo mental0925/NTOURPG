@@ -26,7 +26,7 @@ var CSE_building = {
 		music.loopFull(0.3);
 		walkSound = game.sound.play('walkSound');
 		walkSound.loopFull(0.0);
-		createBasicElements(2130, 245);
+		createBasicElements();
 	},
 	update: function(){
 		map0_bg.x = game.camera.x * 0.75;
