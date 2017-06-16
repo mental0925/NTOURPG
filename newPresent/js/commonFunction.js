@@ -7,8 +7,8 @@ var timeText;
 var dialog;
 var message;
 var player;
-var playerX = 2000;
-var playerY = 200;
+var playerX = 2130;
+var playerY = 245;
 
 function loadBasicElements(){
 	game.load.spritesheet('player', 'image/man.png', 30, 55);
