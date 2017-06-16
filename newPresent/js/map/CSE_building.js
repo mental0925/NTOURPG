@@ -52,6 +52,8 @@ function nearBeiNing(){
 		goButton.events.onInputDown.add(
 			function(){
 				game.state.start('Bei_ning');
+				playerX = 10;
+				playerY = 3950;
 		}, this);
 		noButton.events.onInputDown.add(
 			function(){
